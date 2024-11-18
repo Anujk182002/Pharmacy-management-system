@@ -1,0 +1,66 @@
+Basic Pharmacy System
+Overview
+The Basic Pharmacy System is a web-based application designed to manage pharmacy
+inventory, sales, and related operations efficiently. The system includes features such as
+managing medicine stocks, sales tracking, supplier management, and generating invoices.
+
+Installation Guide
+Prerequisites
+1. XAMPP or WAMP for running Apache and MySQL.
+2. PHP 7.0+ installed on your system.
+3. Visual Studio Code (VS Code) or another code editor for development.
+4. Web browser for accessing the application.
+Setup Instructions
+1. Extract the Project:
+- Download and extract the project folder ("Basic_pharmacy_system-main") to your local
+server directory:
+- For XAMPP: "C:\xampp\htdocs\Basic_pharmacy_system-main"
+- For WAMP: "C:\wamp64\www\Basic_pharmacy_system-main"
+2. Import the Database:
+- Open "http://localhost/phpmyadmin" in your browser.
+- Create a new database, e.g., "pharmacy".
+- Import the file "pharmacy_v1.sql" from the project folder into the database.
+3. Start XAMPP/WAMP Services:
+- Open the control panel and start the Apache and MySQL services.
+4. Run the Application:
+- Open your browser and navigate to:
+"http://localhost/Basic_pharmacy_system-main/index.php"
+
+Login Credentials
+- Username: "medicare"
+- Password: "anujkumar"
+
+Features
+1. Dashboard:
+- Provides an overview of key metrics and actions.
+2. Pharmacy Stock:
+- Manage medicine stock levels and updates.
+3. Sales Management:
+- Track daily sales and generate invoices.
+4. Suppliers:
+- Maintain a list of suppliers.
+5. Invoices:
+- View and manage generated invoices.
+
+Troubleshooting
+1. Blank Page or Errors:
+- Enable PHP error reporting in 'php.ini':
+
+display_errors = On
+- Restart Apache and reload the page.
+2. Database Connection Issues:
+- Check the database connection settings in `config.php` (or equivalent file):
+
+php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "pharmacy";
+
+3. CSS/Assets Not Loading:
+- Ensure the project folder is in the correct server root directory.
+- Verify file permissions for `img`, `dist`, and other asset folders.
+
+Support
+If you encounter any issues, feel free to reach out or consult the project documentation.
+
